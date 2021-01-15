@@ -1,0 +1,13 @@
+<%= @surgery.title  %><br>
+Operating Room Numeber: <%= @surgery.operating_room_number  %><br>
+Other surgeries happening this day of the week: <br>
+<% @surgeries.same_day_surgeries(@surgery).each do |surgery|  %>
+  <%= surgery %><br>
+<% end %>
+
+
+<%= form_tag "/surgeries/#{@surgery.id}/doctors", method: :post do %>
+  <%= label_tag :"Add A Doctor To This Surgery" %>
+  <%= text_field_tag :name %><br>
+  <%= submit_tag "Submit" %>
+<% end %>
