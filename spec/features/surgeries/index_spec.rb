@@ -50,23 +50,23 @@ RSpec.describe Surgery, type: :feature do
 # When I visit the surgery index page
       visit surgeries_path
 # I can click on any surgery title to take me to that surgery’s show page
-      within "#surgery-#{surgery_1.id}" do
+      # within "#surgery-#{surgery_1.id}" do
         expect(page).to have_link(surgery_1.title)
-      end
+      # end
 
-      within "#surgery-#{surgery_2.id}" do
+      # within "#surgery-#{surgery_2.id}" do
         expect(page).to have_link(surgery_1.title)
         click_link(surgery_2.title)
         expect(current_path).to eq(surgery_path(surgery_2.id))
-      end
+      # end
       # And on the show page I see the title and operating room number of that surgery
       expect(page).to have_content(surgery_2.title)
       expect(page).to have_content(surgery_2.operating_room_number)
 # And I see a section of the page that says "Other surgeries happening this day of the week:"
 # And under that header I see titles of all surgeries that happen on the same day of the week as this surgery.
       expect(page).to have_content("Other surgeries happening this day of the week:")
-      expect(page).to have_content(surgery_3.name)
-      expect(page).to have_content(surgery_4.name)
+      expect(page).to have_content(surgery_3.title)
+      expect(page).to have_content(surgery_4.title)
 # (Note: You do not need to use the created_at or updated_at columns for Surgeries)
     end
   end
