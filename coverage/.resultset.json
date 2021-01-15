@@ -1,24 +1,15 @@
 {
   "RSpec": {
     "coverage": {
-      "/Users/mikefoy/turing/2module/turing_tests/b2-final/app/models/doctor.rb": {
+      "/Users/mikefoy/turing/2module/turing_tests/b2-final/app/models/surgery.rb": {
         "lines": [
           1,
-          1,
-          1,
-          1,
-          null,
-          null
-        ]
-      },
-      "/Users/mikefoy/turing/2module/turing_tests/b2-final/app/models/application_record.rb": {
-        "lines": [
           1,
           1,
           null
         ]
       },
-      "/Users/mikefoy/turing/2module/turing_tests/b2-final/app/models/hospital.rb": {
+      "/Users/mikefoy/turing/2module/turing_tests/b2-final/app/models/application_record.rb": {
         "lines": [
           1,
           1,
@@ -33,13 +24,16 @@
           null
         ]
       },
-      "/Users/mikefoy/turing/2module/turing_tests/b2-final/app/models/surgery.rb": {
+      "/Users/mikefoy/turing/2module/turing_tests/b2-final/app/models/doctor.rb": {
         "lines": [
+          1,
+          1,
+          1,
           1,
           null
         ]
       }
     },
-    "timestamp": 1610728074
+    "timestamp": 1610728182
   }
 }
