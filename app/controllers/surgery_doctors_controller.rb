@@ -1,8 +1,8 @@
 class SurgeryDoctorsController < ApplicationController
   def create
-    doctor = Doctor.search_by_name(params[:name])
+    doctor = Doctor.search_by_name(params[:"Add A Doctor To This Surgery"])
     if doctor != nil
-      SurgeryDoctor.create!(
+      DoctorSurgery.create!(
         doctor_id: doctor.id,
         surgery_id: params[:surgery_id]
       )

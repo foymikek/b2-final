@@ -1,15 +1,15 @@
 {
   "RSpec": {
     "coverage": {
-      "/Users/mikefoy/turing/2module/turing_tests/b2-final/app/models/doctor.rb": {
+      "/Users/mikefoy/turing/2module/turing_tests/b2-final/app/models/surgery.rb": {
         "lines": [
-          1,
           1,
           1,
           1,
           null,
           1,
-          1,
+          2,
+          null,
           null,
           null
         ]
@@ -28,6 +28,39 @@
           null
         ]
       },
+      "/Users/mikefoy/turing/2module/turing_tests/b2-final/app/models/doctor.rb": {
+        "lines": [
+          1,
+          1,
+          1,
+          1,
+          null,
+          1,
+          1,
+          null,
+          null
+        ]
+      },
+      "/Users/mikefoy/turing/2module/turing_tests/b2-final/app/controllers/surgeries_controller.rb": {
+        "lines": [
+          1,
+          1,
+          0,
+          null,
+          null,
+          1,
+          2,
+          2,
+          null,
+          null
+        ]
+      },
+      "/Users/mikefoy/turing/2module/turing_tests/b2-final/app/controllers/application_controller.rb": {
+        "lines": [
+          1,
+          null
+        ]
+      },
       "/Users/mikefoy/turing/2module/turing_tests/b2-final/app/models/doctor_surgery.rb": {
         "lines": [
           1,
@@ -36,20 +69,25 @@
           null
         ]
       },
-      "/Users/mikefoy/turing/2module/turing_tests/b2-final/app/models/surgery.rb": {
+      "/Users/mikefoy/turing/2module/turing_tests/b2-final/app/controllers/surgery_doctors_controller.rb": {
         "lines": [
           1,
           1,
-          1,
           null,
           1,
-          0,
+          1,
+          1,
           null,
+          null,
+          null,
+          null,
+          1,
+          1,
           null,
           null
         ]
       }
     },
-    "timestamp": 1610733905
+    "timestamp": 1610734803
   }
 }

@@ -6,8 +6,13 @@ Other surgeries happening this day of the week: <br>
 <% end %>
 
 
-<%= form_tag "/surgeries/#{@surgery.id}/doctors", method: :post do %>
+<%= form_tag surgery_doctors_path(@surgery.id), method: :post do %>
   <%= label_tag :"Add A Doctor To This Surgery" %>
-  <%= text_field_tag :name %><br>
+  <%= text_field_tag :"Add A Doctor To This Surgery" %><br>
   <%= submit_tag "Submit" %>
+<% end %>
+
+Doctors assinged to surgery:  <br>
+<% @surgery.doctors.each do |doctor|  %>
+  <%= doctor.name %>
 <% end %>
