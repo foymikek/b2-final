@@ -12,7 +12,7 @@ Other surgeries happening this day of the week: <br>
   <%= submit_tag "Submit" %>
 <% end %>
 
-Doctors assinged to surgery:  <br>
+Doctors assinged to this surgery:  <br>
 <% @surgery.doctors.each do |doctor|  %>
-  <%= doctor.name %>
+  <%= doctor.name %><br>
 <% end %>

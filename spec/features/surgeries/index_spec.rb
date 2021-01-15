@@ -58,6 +58,7 @@ RSpec.describe Surgery, type: :feature do
         expect(page).to have_link(surgery_1.title)
         click_link(surgery_2.title)
         expect(current_path).to eq(surgery_path(surgery_2.id))
+        save_and_open_page
       # end
       # And on the show page I see the title and operating room number of that surgery
       expect(page).to have_content(surgery_2.title)
