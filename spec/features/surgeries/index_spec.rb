@@ -59,7 +59,7 @@ RSpec.describe Surgery, type: :feature do
         click_link(surgery_2.title)
         expect(current_path).to eq(surgery_path(surgery_2.id))
       # end
-      # And on the show page I see the title and operating room number of that surgery
+# And on the show page I see the title and operating room number of that surgery
       expect(page).to have_content(surgery_2.title)
       expect(page).to have_content(surgery_2.operating_room_number)
 # And I see a section of the page that says "Other surgeries happening this day of the week:"
@@ -67,7 +67,6 @@ RSpec.describe Surgery, type: :feature do
       expect(page).to have_content("Other surgeries happening this day of the week:")
       expect(page).to have_content(surgery_3.title)
       expect(page).to have_content(surgery_4.title)
-# (Note: You do not need to use the created_at or updated_at columns for Surgeries)
     end
   end
 end
