@@ -13,7 +13,7 @@ RSpec.describe Surgery, type: :model do
       surgery_4 = Surgery.create(title: "Surgery 4", day_of_the_week: "Tuesday", operating_room_number: 4)
       surgery_5 = Surgery.create(title: "Surgery 5", day_of_the_week: "Tuesday", operating_room_number: 4)
 
-      expect(Surgery.same_day_surgeries(surgery_5)).to eq(["Surgery 2", "Surgery 2", "Surgery 3", "Surgery 4", "Surgery 5"])
+      expect(Surgery.same_day_surgeries(surgery_5)).to eq(["Surgery 2", "Surgery 3", "Surgery 4", "Surgery 5"])
     end
   end
 end
